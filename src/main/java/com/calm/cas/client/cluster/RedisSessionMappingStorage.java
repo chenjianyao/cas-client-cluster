@@ -89,7 +89,7 @@ public class RedisSessionMappingStorage implements SessionMappingStorage {
     }
     private String getKey(String key){
         if(applicationName!=null){
-            return applicationName+"/"+key;
+            return applicationName+":"+key;
         }
         return key;
 
